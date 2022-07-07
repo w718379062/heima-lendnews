@@ -24,7 +24,7 @@ public class ScheduleApplication {
     @Bean
     public MybatisPlusInterceptor optimisticLockerInterceptor(){
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
-        //乐观锁支持555556
+        //乐观锁支持5555566
         interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
         return interceptor;
     }
