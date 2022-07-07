@@ -1,0 +1,22 @@
+server:
+  port: 51803
+spring:
+  application:
+    name: leadnews-wemedia
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.200.130:8848
+      config:
+        server-addr: 192.168.200.130:8848
+        file-extension: yml
+  servlet:
+    multipart:
+      max-file-size: 20MB #单个文件最大大小
+      max-request-size: 100MB   #请求最大大小
+mybatis-plus:
+ configuration:
+  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+tess4j:
+  data-path: D:\Develop\zitiku\tessdata #改成自己的
+  language: chi_sim
